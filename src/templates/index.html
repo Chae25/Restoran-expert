@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DB0000"/>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="./app.webmanifest.json">
+    <link rel="icon" href="./favicon.png">
+    <title>Euphoria-Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Lompat ke Konten</a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#" id="home-link">Euphoria-Restaurant</a>
+            </div>
+            <button class="menu-btn" aria-label="menu" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+            <div class="menu">
+                <div class="menu-links">
+                    <a href="#" id="home-nav">Beranda</a>
+                    <a href="#" id="favorite-nav">Favorit</a>
+                    <a href="https://www.linkedin.com/in/eliza-putri-295470288/">Tentang Kami</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="hero">
+            <img src="./images/heros/hero-image_4.jpg" alt="Makanan lezat di atas meja">
+            <div class="hero-text">
+                <h1>Selamat Datang di Euphoria-Restaurant</h1>
+                <p>Nikmati berbagai pilihan makanan lezat dan favorit dari seluruh Indonesia</p>
+            </div>
+        </section>
+        <div class="container" id="main-section">
+            <h1>My Restaurant</h1>
+            <div id="restaurants" class="cards" crossorigin="anonymous" >
+                <!-- Restaurants will be rendered here -->
+            </div>
+        </div>
+        <div class="container" id="favorite-section" style="display:none;">
+            <h1>Favorit Restoran</h1>
+            <div id="favorite-restaurants" class="cards">
+                <!-- Favorite restaurants will be rendered here -->
+            </div>
+        </div>
+        <div class="container" id="detail-section" style="display:none;">
+            <div id="restaurant-detail" class="detail">
+                <!-- Restaurant detail will be rendered here -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024 Euphoria-Restaurant - By Eliza Putri</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
